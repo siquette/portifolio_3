@@ -1,16 +1,12 @@
 <!DOCTYPE HTML>
-<!--
-	Spectral by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
 <html>
 
 <head>
-	<title>Portifolio_Rodrigo</title>
+	<title>Portfólio | Rodrigo Aroni Siquette</title>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	<link rel="stylesheet" href="assets/css/main.css" />
+	<link rel="stylesheet" href="assets/css/custom.css" />
 	<noscript>
 		<link rel="stylesheet" href="assets/css/noscript.css" />
 	</noscript>
@@ -18,23 +14,20 @@
 
 <body class="landing is-preload">
 
-	<!-- Page Wrapper -->
 	<div id="page-wrapper">
 
-		<!-- Header -->
 		<header id="header" class="alt">
-			<h1><a href="index.html">Portifolio</a></h1>
+			<h1><a href="index.html">Portfólio</a></h1>
 			<nav id="nav">
 				<ul>
-					<li class="Portifolio">
+					<li class="special">
 						<a href="#menu" class="menuToggle"><span>Menu</span></a>
 						<div id="menu">
 							<ul>
 								<li><a href="#one">Sobre mim</a></li>
 								<li><a href="#three">Habilidades</a></li>
 								<li><a href="#two">Projetos</a></li>
-								<li><a href="#footer">Contatos</a></li>
-								<li><a href="#">Log In</a></li>
+								<li><a href="#cta">Contatos</a></li>
 							</ul>
 						</div>
 					</li>
@@ -42,495 +35,384 @@
 			</nav>
 		</header>
 
-		<!-- Banner -->
-<section id="banner">
-            <div class="inner">
-                <h2>WELCOME TO MY PORTFOLIO</h2>
-                <p>I am Rodrigo Aroni Siquette<br />
-                Inspired by tough problems.<br />
-                Let’s work together.
-                </p>
+		<section id="banner">
+			<div class="inner">
+				<h2>WELCOME TO MY PORTFOLIO</h2>
+				<p>I am Rodrigo Aroni Siquette<br />
+				Inspired by tough problems.<br />
+				Let’s work together.
+				</p>
+			</div>
+			<a href="#one" class="more scrolly">Learn More</a>
+		</section>
+
+		<section id="one" class="wrapper style1 special">
+			<div class="inner">
+				<header class="major">
+					<h2>Sobre mim</h2>
+					<img src="https://raw.githubusercontent.com/siquette/agoravai/gh-pages/imagem/logo1.png"
+						alt="Logo Rodrigo Siquette" class="profile-logo">
+				</header>
+
+				<div class="text-content">
+					
+					<div class="formacao-box">
+						<h3><i class="solid fa-graduation-cap"></i> Formação Acadêmica</h3>
+						<ul class="formacao-list">
+							<li><strong>MBA:</strong> Data Science e Analytics - ESALQ/USP</li>
+							<li><strong>Especialização:</strong> Inteligência Artificial - Escola Politécnica da USP (Em andamento)</li>
+							<li><strong>Graduação:</strong> Geografia - Universidade de São Paulo (USP)</li>
+						</ul>
+					</div>
+
+					<p>
+						Atuo na convergência entre <strong>Ciência de Dados</strong>, <strong>Inteligência Artificial</strong> e
+						<strong>Análise Espacial</strong>. Minha abordagem técnica não foca apenas em ferramentas, mas na arquitetura de
+						soluções robustas para problemas complexos.
+					</p>
+
+					<blockquote class="chess-quote">
+						"Porque no xadrez do mundo moderno, entender o 'onde' é tão crucial quanto o 'o quê' e o 'por quê'."
+					</blockquote>
+				</div>
+
+				<ul class="icons major spacer-md">
+					<li><a href="https://siquette.github.io/cv/" class="icon brands fa-github"><span class="label">Github</span></a></li>
+					<li><a href="https://www.linkedin.com/in/rodrigo-aroni-siquette" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+					<li><a href="mailto:rodrigo.siquette@usp.br" class="icon solid fa-envelope"><span class="label">Email USP</span></a></li>
+				</ul>
+			</div>
+		</section>
+
+		<section id="three" class="wrapper style3 special">
+			<div class="inner">
+				<header class="major">
+					<h2>Habilidades & Tech Stack</h2>
+					<p>Convergência entre Rigor Estatístico, IA e Visão de Negócio.</p>
+
+					<div class="spacer-md">
+						<img src="https://github.com/siquette/portifolio_3/blob/main/images/ezgif.com-gif-maker.gif?raw=true"
+							alt="Data Analysis Process" class="project-gif">
+					</div>
+				</header>
+
+				<ul class="features">
+					<li class="icon solid fa-brain">
+						<h3>Generative AI & Deep Learning</h3>
+						<p>
+							Transformers (BERT, GPT), RAG, Fine-tuning de LLMs, NLP & Visão Computacional.<br>
+							<strong>Stack:</strong> PyTorch, TensorFlow, Keras.
+						</p>
+					</li>
+
+					<li class="icon solid fa-chart-line">
+						<h3>Data Science & Estatística</h3>
+						<p>
+							Regressão, Séries Temporais, Clustering (K-Means, DBSCAN), Inferência Bayesiana.<br>
+							<strong>Stack:</strong> Scikit-learn, Statsmodels.
+						</p>
+					</li>
+
+					<li class="icon solid fa-globe-americas">
+						<h3>Inteligência Geoespacial (Spatial DS)</h3>
+						<p>
+							<strong>Análise:</strong> Geoestatística (Moran’s I, GWR), Sensoriamento Remoto & Análise de Padrões Espaciais.<br>
+							<strong>Ferramentas:</strong> ArcGIS, QGIS, Geopandas, Shapely.
+						</p>
+					</li>
+
+					<li class="icon solid fa-code">
+						<h3>Engenharia de Dados</h3>
+						<p>
+							ETL, Data Wrangling, Web Scraping, Deploy de Modelos.<br>
+							<strong>Stack:</strong> Python (Expert), SQL, Streamlit, Git.
+						</p>
+					</li>
+				</ul>
+			</div>
+		</section>
+
+		<section id="two" class="wrapper style3 special">
+			<div class="inner">
+				<header class="major text-center">
+					<h2>Projetos em Destaque</h2>
+				</header>
+			</div>
+		</section>
+
+		<section class="spotlight">
+			<div class="image">
+				<a href="https://siquette.github.io/work-1-py/">
+					<img src="https://coronavirusbra1.github.io/assets/meta/ogimage.png" alt="Covid-19 Analysis" class="responsive-img"/>
+				</a>
+			</div>
+			<div class="content">
+				<h3>Séries Temporais: Análise COVID-19 (SP)</h3>
+				<p>
+					Estudo estatístico utilizando dados da SEADE. Correlação entre óbitos, casos confirmados e índices de isolamento social no estado de São Paulo para avaliar a efetividade de políticas públicas.
+				</p>
+
+				<h4>Tech Stack:</h4>
+				<div class="tech-tags-container">
+					<span class="tech-tag">Séries Temporais</span>
+					<span class="tech-tag">Estatística</span>
+					<span class="tech-tag">Matplotlib</span>
+				</div>
+
+				<ul class="actions">
+					<li><a href="https://siquette.github.io/work-1-py/" class="button primary icon solid fa-laptop-code">Ver Estudo Completo</a></li>
+				</ul>
+			</div>
+		</section>
+
+		<section class="spotlight">
+			<div class="image">
+				<a href="https://fooddeliverydataset-z1a1waexcw.streamlit.app/">
+					<img src="https://raw.githubusercontent.com/siquette/portifolio_3/main/images/382b59e3-c635-451f-ac70-e51afb951220.jpg" alt="Food Delivery Dashboard" class="responsive-img"/>
+				</a>
+			</div>
+			<div class="content">
+				<h3>Analytics de Delivery (Curry Company)</h3>
+				<p>
+					Solução completa de BI hospedada em Cloud. Monitoramento em tempo real de crescimento da empresa, eficiência logística de entregadores e qualidade dos restaurantes parceiros.
+				</p>
+
+				<h4>Tech Stack:</h4>
+				<div class="tech-tags-container">
+					<span class="tech-tag">Streamlit Cloud</span>
+					<span class="tech-tag">Python</span>
+					<span class="tech-tag">Data Viz</span>
+				</div>
+
+				<ul class="actions">
+					<li><a href="https://fooddeliverydataset-z1a1waexcw.streamlit.app/" class="button primary icon solid fa-external-link-alt">Ver Dashboard</a></li>
+					<li><a href="https://github.com/siquette/Food_Delivery_Dataset" class="button icon brands fa-github">Ver Código</a></li>
+				</ul>
+			</div>
+		</section>
+
+		<section class="spotlight">
+			<div class="image">
+				<a href="https://fome-zero-base-sa90zpsdjp.streamlit.app//">
+					<img src="https://raw.githubusercontent.com/siquette/portifolio_3/main/images/37c55eb5-e270-4153-a308-70724c9bed5f.jpg" alt="Fome Zero Dashboard" class="responsive-img"/>
+				</a>
+			</div>
+			<div class="content">
+				<h3>Painel Gerencial: Fome Zero Marketplace</h3>
+				<p>
+					Dashboard interativo desenvolvido para acompanhar métricas de negócio de um marketplace de restaurantes. Visualização de KPIs estratégicos como distribuição geográfica, tipos de culinária e performance de entregas.
+				</p>
+
+				<h4>Tech Stack:</h4>
+				<div class="tech-tags-container">
+					<span class="tech-tag">Python</span>
+					<span class="tech-tag">Streamlit</span>
+					<span class="tech-tag">Plotly</span>
+					<span class="tech-tag">ETL</span>
+				</div>
+
+				<ul class="actions">
+					<li><a href="https://fome-zero-base-sa90zpsdjp.streamlit.app//" class="button primary icon solid fa-external-link-alt">Ver Dashboard</a></li>
+					<li><a href="https://github.com/siquette/fome-zero-base/blob/main/notebooks/c01_pgvf.ipynb" class="button icon brands fa-github">Ver Código</a></li>
+				</ul>
+			</div>
+		</section>
+
+		<section class="spotlight">
+			<div class="image">
+				<a href="https://www.linkedin.com/pulse/resumo-sobre-aprendizado-de-m%25C3%25A1quina-n%25C3%25A3o-clustering-aroni-siquette-yutkf/?trackingId=PMlspbutQgCerf%2FJoq0PMw%3D%3D">
+					<img src="https://github.com/siquette/portfolio_2/blob/main/images/kmeans_fig.gif?raw=true" alt="K-Means Clustering" class="responsive-img"/>
+				</a>
+			</div>
+			<div class="content">
+				<h3>Aprendizado de Máquina Não Supervisionado: Clustering</h3>
+				<p>
+					Este projeto foca em técnicas de Clustering aplicadas a negócios. Utilizamos tanto o K-means quanto o Método Hierárquico Aglomerativo (HAC) para resolver problemas reais de segmentação.
+				</p>
+
+				<ul class="actions">
+					<li><a href="https://www.linkedin.com/pulse/resumo-sobre-aprendizado-de-m%25C3%25A1quina-n%25C3%25A3o-clustering-aroni-siquette-yutkf/?trackingId=PMlspbutQgCerf%2FJoq0PMw%3D%3D" class="button primary icon solid fa-file-alt">Artigo Geral</a></li>
+				</ul>
+
+				<h4>Teste 1: Análise de Cartão de Crédito (K-means)</h4>
+				<p>
+					Segmentação de clientes bancários baseada em limite, visitas ao banco e chamadas.
+				</p>
+				<ul class="actions small">
+					<li><a href="https://github.com/siquette/cluster-credito" class="button small icon brands fa-github">Código</a></li>
+					<li><a href="https://www.linkedin.com/pulse/kmeans-para-an%C3%A1lise-do-banco-de-dados-cart%C3%A3o-cr%C3%A9dito-aroni-siquette-r7t1f/?trackingId=HWJ08%2FNySTGTWblXFsTlIw%3D%3D" class="button small icon solid fa-file-alt">Artigo</a></li>
+				</ul>
+
+				<h4>Teste 2: Análise de Varejo (K-means e HAC)</h4>
+				<p>
+					Comparação técnica entre algoritmos para entender comportamento de compra em loja varejista.
+				</p>
+				<ul class="actions small">
+					<li><a href="https://github.com/siquette/Clustering-varejista" class="button small icon brands fa-github">Código</a></li>
+				</ul>
+
+				<h4>Teste 3: Índices de Países (HAC e K-means)</h4>
+				<p>
+					Agrupamento de países baseado em indicadores macroeconômicos (PIB, inflação, expectativa de vida).
+				</p>
+				<ul class="actions small">
+					<li><a href="https://github.com/siquette/cluster_paises" class="button small icon brands fa-github">Código</a></li>
+				</ul>
+				
+			</div>
+		</section>
+
+		<section class="spotlight">
+            <div class="image">
+                <a href="https://github.com/siquette/aula_regressao/blob/main/IAD_004_Y2025_03.ipynb">
+                    <img src="https://raw.githubusercontent.com/siquette/portifolio_3/main/images/regression_placeholder_2.jpg" 
+                         alt="Análise Multivariada"
+                         class="responsive-img" />
+                </a>
             </div>
-            <a href="#one" class="more scrolly">Learn More</a>
-        </section>
+            <div class="content">
+                <h3>Modelagem Avançada: Regressão Múltipla e Diagnóstico</h3>
+                <p>
+                    Expansão da análise para cenários multivariados. Detecção e tratamento de Multicolinearidade (VIF), outliers e Leverage. 
+                    Métricas de avaliação (R² Ajustado, RMSE, MAE) para garantir robustez e mitigar overfitting.
+                </p>
 
-        <section id="one" class="wrapper style1 special">
-            <div class="inner">
-                <header class="major">
-                    <h2>Sobre mim</h2>
-                    <img src="https://raw.githubusercontent.com/siquette/agoravai/gh-pages/imagem/logo1.png"
-                         width="35%" alt="Logo Rodrigo" 
-                         style="display: block; margin: 20px auto 0 auto; border-radius: 50%;">
-                </header>
-
-                <style>
-                    .formacao-box {
-                        margin-bottom: 35px; 
-                        border-left: 4px solid #ed4933; 
-                        padding-left: 15px; 
-                        background-color: rgba(0,0,0,0.03); /* Fundo muito leve para destaque */
-                        padding-top: 15px; 
-                        padding-bottom: 15px;
-                        text-align: left;
-                    }
-                    .text-content {
-                        text-align: left; 
-                        max-width: 900px; 
-                        margin: 0 auto; 
-                        color: #444;
-                    }
-                    .chess-quote {
-                        font-size: 1.3em; 
-                        font-style: italic; 
-                        color: #555; 
-                        border-left: none; 
-                        text-align: center; 
-                        margin: 2.5em 0;
-                        font-weight: 300;
-                    }
-                </style>
-
-                <div class="text-content">
-                    
-                    <div class="formacao-box">
-                        <h3 style="margin-bottom: 10px; color: #2e3842;">Formação Acadêmica</h3>
-                        <ul style="list-style-type: none; padding: 0; margin: 0; font-size: 0.95em;">
-                            <li style="margin-bottom: 8px;"><strong>MBA:</strong> Data Science e Analytics - ESALQ/USP</li>
-                            <li style="margin-bottom: 8px;"><strong>Especialização:</strong> Inteligência Artificial - Escola Politécnica da USP (Em andamento)</li>
-                            <li><strong>Graduação:</strong> Geografia - Universidade de São Paulo (USP)</li>
-                        </ul>
-                    </div>
-
-                    <p style="font-size: 1.15em; line-height: 1.8;">
-                        Atuo na convergência entre <strong>Ciência de Dados</strong>, <strong>Inteligência Artificial</strong> e <strong>Análise Espacial</strong>. Minha abordagem técnica não foca apenas em ferramentas, mas na arquitetura de soluções robustas para problemas complexos.
-                    </p>
-
-                    <blockquote class="chess-quote">
-                        "Porque no xadrez do mundo moderno, entender o 'onde' é tão crucial quanto o 'o quê' e o 'por quê'."
-                    </blockquote>
-
-                    <p style="font-size: 1.15em; line-height: 1.8;">
-                        <!-- colocar frase  -->
-                    </p>
+                <h4>Tech Stack:</h4>
+                <div class="tech-tags-container">
+                    <span class="tech-tag">Python & Scikit-learn</span>
+                    <span class="tech-tag">Statsmodels</span>
+                    <span class="tech-tag">Pandas</span>
                 </div>
 
-                <ul class="icons major" style="margin-top: 40px;">
-                    <li><a href="https://siquette.github.io/cv/" class="icon brands fa-github"><span class="label">Github</span></a></li>
-                    <li><a href="https://www.linkedin.com/in/rodrigo-aroni-siquette" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
-                    <li><a href="mailto:rodrigo.siquette@usp.br" class="icon solid fa-envelope"><span class="label">Email USP</span></a></li>
-                    <li><a href="mailto:rodrigosiquette@gmail.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+                <ul class="actions">
+                    <li><a href="https://github.com/siquette/aula_regressao/blob/main/IAD_004_Y2025_03.ipynb" class="button primary icon brands fa-github">Ver Código</a></li>
                 </ul>
             </div>
         </section>
 
-		<!-- Three -->
-		<section id="three" class="wrapper style3 special">
-    <div class="inner">
-        <header class="major">
-            <h2>Habilidades & Tech Stack</h2>
-            <p>Convergência entre Rigor Estatístico, Inteligência Artificial e Visão de Negócio.</p>
-            
-            <div style="margin: 2em 0;">
-                <img src="https://github.com/siquette/portifolio_3/blob/main/images/ezgif.com-gif-maker.gif?raw=true"
-                     alt="Data Analysis Process" 
-                     width="60%" 
-                     style="border-radius: 5px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+		<section class="spotlight">
+            <div class="image">
+                <a href="https://github.com/siquette/aula_regressao/blob/main/IAD_004_Y2025_01.ipynb">
+                    <img src="https://raw.githubusercontent.com/siquette/portifolio_3/main/images/regression_placeholder_1.jpg" 
+                         alt="Gráfico de Regressão Linear" 
+                         class="responsive-img" />
+                </a>
             </div>
-        </header>
-
-        <ul class="features">
-            <li class="icon solid fa-brain">
-                <h3>Generative AI & Deep Learning</h3>
+            <div class="content">
+                <h3>Fundamentos de Modelagem: Regressão Linear Simples</h3>
                 <p>
-                    <strong>Arquiteturas:</strong> Transformers (BERT, GPT, T5), CNNs & RNNs.<br>
-                    <strong>Aplicações:</strong> RAG (Retrieval-Augmented Generation), Fine-tuning de LLMs (Llama, PaLM), NLP & Visão Computacional.<br>
-                    <strong>Frameworks:</strong> PyTorch, TensorFlow, Keras.
+                    Validação rigorosa dos pressupostos clássicos: linearidade, normalidade dos resíduos e homocedasticidade. O básico bem feito garante a inferência correta.
                 </p>
-            </li>
+                
+                <h4>Tech Stack:</h4>
+                <div class="tech-tags-container">
+                    <span class="tech-tag">Python (NumPy, Pandas)</span>
+                    <span class="tech-tag">Statsmodels</span>
+                    <span class="tech-tag">Scipy</span>
+                </div>
 
-            <li class="icon solid fa-chart-line">
-                <h3>Data Science & Estatística Avançada</h3>
-                <p>
-                    <strong>Modelagem:</strong> Regressão (Linear/Logística/Multinível), Séries Temporais & Forecasting.<br>
-                    <strong>Unsupervised:</strong> Clustering (K-Means, DBSCAN), PCA & Análise Fatorial.<br>
-                    <strong>Métodos:</strong> Estatística Bayesiana, Teste de Hipóteses & Inferência.
-                </p>
-            </li>
+                <ul class="actions">
+                    <li><a href="https://github.com/siquette/aula_regressao/blob/main/IAD_004_Y2025_01.ipynb" class="button icon brands fa-github">Ver Código</a></li>
+                </ul>
+            </div>
+        </section>
 
-            <li class="icon solid fa-globe-americas">
-                <h3>Inteligência Geoespacial (Spatial DS)</h3>
-                <p>
-                    <strong>Análise:</strong> Geoestatística (Moran’s I, GWR), Sensoriamento Remoto & Análise de Padrões Espaciais.<br>
-                    <strong>Ferramentas:</strong> ArcGIS, QGIS, Geopandas, Shapely.<br>
-                    
-                </p>
-            </li>
+		<section class="spotlight">
+			<div class="image">
+				<a href="https://github.com/siquette/md_code_Data-Money">
+					<img src="https://raw.githubusercontent.com/siquette/portifolio_3/main/images/ml.png" alt="Machine Learning Essay" class="responsive-img"/>
+				</a>
+			</div>
+			<div class="content">
+				<h3>Ensaio de Machine Learning</h3>
+				<p>
+					Estudo sobre limiares de Overfitting e Underfitting. Ajuste fino de hiperparâmetros em algoritmos de Classificação (KNN, Random Forest), Regressão (Lasso, Ridge) e Clusterização.
+				</p>
 
-            <li class="icon solid fa-code">
-                <h3>Engenharia de Dados & Deploy</h3>
-                <p>
-                    <strong>Linguagens:</strong> Python (Expert), R, SQL Avançado.<br>
-                    <strong>Pipeline:</strong> ETL, Data Wrangling, Web Scraping (Crawlers).<br>
-                    <strong>Produtização:</strong> Streamlit, APIs, Git/Github & Cloud Computing Basics.
-                </p>
-            </li>
+				<h4>Tech Stack:</h4>
+				<div class="tech-tags-container">
+					<span class="tech-tag">Scikit-learn</span>
+					<span class="tech-tag">Random Forest</span>
+					<span class="tech-tag">Optimização</span>
+				</div>
 
-            <li class="icon solid fa-briefcase">
-                <h3>Estratégia de Negócio</h3>
-                <p>
-                    Gestão de Riscos & Tomada de Decisão.<br>
-                    Business Intelligence (Power BI/Tableau).<br>
-                    Storytelling de Dados para Stakeholders.<br>
-                    Metodologias Ágeis.
-                </p>
-            </li>
-        </ul>
-    </div>
-</section>
-
-		<!-- Two -->
-		<section id="Two">
-			<div class="inner" class="wrapper style3 special">
-				<section id="Two">
-					<div class="inner" class="wrapper style3 special">
-						<header class="major text-center">
-							<center>
-								<h2>Projetos</h2>
-							</center>
-						</header>
-					</div>
-				</section>
-
-
-
-
-				
+				<ul class="actions">
+					<li><a href="https://github.com/siquette/md_code_Data-Money" class="button icon brands fa-github">Acessar Repositório</a></li>
+				</ul>
+			</div>
 		</section>
-		<p></p>
-		<article>
-			<section class="spotlight">
-				<div class="image"><a
-						href="https://www.linkedin.com/pulse/desvendando-os-segredos-da-limpeza-de-dados-com-aroni-siquette-qvyxf/?trackingId=jxja%2BfiSRAKENu%2BhjKTBgQ%3D%3D"><img
-							src="https://github.com/siquette/portfolio_2/blob/main/images/data-wrangling-minion.gif?raw=true"
-							alt="" />
+
+		<section class="spotlight">
+			<div class="image">
+				<a href="https://www.linkedin.com/pulse/desvendando-os-segredos-da-limpeza-de-dados-com-aroni-siquette-qvyxf/?trackingId=jxja%2BfiSRAKENu%2BhjKTBgQ%3D%3D">
+					<img src="https://github.com/siquette/portfolio_2/blob/main/images/data-wrangling-minion.gif?raw=true" alt="Data Wrangling" class="responsive-img"/>
+				</a>
+			</div>
+			<div class="content">
+				<h3>Detox dos Dados: Data Wrangling Avançado</h3>
+				<p>
+					Processo meticuloso para garantir a integridade analítica. Eliminação de ruídos, tratamento de dados faltantes e padronização.
+				</p>
+
+				<h4>Tech Stack:</h4>
+				<div class="tech-tags-container">
+					<span class="tech-tag">Python</span>
+					<span class="tech-tag">Pandas</span>
+					<span class="tech-tag">Seaborn</span>
 				</div>
-				<div class="content"></a>
 
-					<h3>Detox dos Dados: Limpeza para um Futuro Brilhante.</h3>
-					<p align="justify">Imagine um mundo onde cada informação é precisa, completa e confiável. Onde
-						análises fluem sem obstáculos e decisões são tomadas com total segurança. Esse mundo pode ser
-						seu com a limpeza de dados, o processo mágico que remove impurezas e garante a qualidade das
-						suas informações..</p>
-					<p align="justify">Mas o que se esconde por trás dessa faxina digital? Na verdade, é um processo
-						meticuloso que elimina dados incorretos, incompletos, duplicados, mal formatados ou
-						irrelevantes. Imagine um prato delicioso: se os ingredientes estiverem estragados, o resultado
-						será decepcionante. Com seus dados, a lógica é a mesma: para análises precisas e decisões
-						assertivas, precisamos de um banquete de informações confiáveis!</p>
+				<ul class="actions">
+					<li><a href="https://www.linkedin.com/pulse/desvendando-os-segredos-da-limpeza-de-dados-com-aroni-siquette-qvyxf/?trackingId=jxja%2BfiSRAKENu%2BhjKTBgQ%3D%3D" class="button icon solid fa-file-alt">Ler Artigo</a></li>
+					<li><a href="https://github.com/siquette/limpeza_dados_spoty" class="button icon brands fa-github">Ver Código</a></li>
+				</ul>
+			</div>
+		</section>
 
-					<h3>As ferramentas utilizadas foram:</h3>
+		<section id="cta" class="wrapper style4">
+			<div class="inner">
+				<header>
+					<h2>Entre em Contato</h2>
+					<p>Sinta-se à vontade para entrar em contato.</p>
+				</header>
+				<ul class="icons major">
+					<li>
+						<a href="mailto:rodrigosiquette@gmail.com">
+							<span class="icon solid fa-envelope"></span>
+							<span class="label">Gmail</span>
+						</a>
+					</li>
+					<li>
+						<a href="mailto:rodrigo.siquette@usp.br">
+							<span class="icon solid fa-envelope"></span>
+							<span class="label">USP Mail</span>
+						</a>
+					</li>
+					<li>
+						<a href="https://www.linkedin.com/in/rodrigo-aroni-siquette">
+							<span class="icon brands fa-linkedin"></span>
+							<span class="label">LinkedIn</span>
+						</a>
+					</li>
+					<li>
+						<a href="https://siquette.github.io/cv/">
+							<span class="icon solid fa-file-alt"></span>
+							<span class="label">CV</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</section>
 
-					<ul>
-
-						<li>Pandas</li>
-						<li>Matplotlib</li>
-						<li>Seaborn</li>
-						<li>Numpy</li>
-
-						<p></p>
-
-						<ul>
-
-								<p></p>
-							</ul>
-							<ul class="actions">
-								<li><a href="https://github.com/siquette/limpeza_dados_spoty" class="button">CODE</a>
-								</li>
-								<li><a href="https://www.linkedin.com/pulse/desvendando-os-segredos-da-limpeza-de-dados-com-aroni-siquette-qvyxf/?trackingId=jxja%2BfiSRAKENu%2BhjKTBgQ%3D%3D"
-										class="button">Page</a></li>
-							</ul>
-
-			</section>
-			<section class="spotlight">
-				<div class="image">
-					<a
-						href="https://www.linkedin.com/pulse/resumo-sobre-aprendizado-de-m%25C3%25A1quina-n%25C3%25A3o-clustering-aroni-siquette-yutkf/?trackingId=PMlspbutQgCerf%2FJoq0PMw%3D%3D">
-						<img src="https://github.com/siquette/portfolio_2/blob/main/images/kmeans_fig.gif?raw=true"
-							alt="" />
-					</a>
-				</div>
-				<div class="content">
-					<h3>Aprendizado de Máquina Não Supervisionado: Clustering.</h3>
-					<p align="justify">
-						Este projeto é um treino de Aprendizado de Máquina Não Supervisionado, focado em técnicas de
-						Clustering. Utilizamos tanto o K-means quanto o Método Hierárquico Aglomerativo (HAC) para
-						realizar análises de diferentes conjuntos de dados. O projeto está dividido em três testes
-						distintos e inclui a elaboração de dois artigos, um explicando a teoria e outro a prática.:
-					</p>
-					<ul class="actions">
-						<li><a href="https://www.linkedin.com/pulse/resumo-sobre-aprendizado-de-m%25C3%25A1quina-n%25C3%25A3o-clustering-aroni-siquette-yutkf/?trackingId=PMlspbutQgCerf%2FJoq0PMw%3D%3D"
-								class="button">Page</a></li>
-					</ul>
-					<h4>Teste 1: Análise do Banco de Dados de Cartão de Crédito com K-means.</h4>
-
-					<p align="justify">
-						Neste primeiro teste, aplicamos o algoritmo K-means para segmentar um banco de dados de clientes
-						de cartão de crédito. As variáveis analisadas incluem o limite médio do cartão de crédito, o
-						total de cartões de crédito, o total de visitas ao banco (presenciais online) e o total de
-						conexões telefônicas. Através dessa análise, buscamos identificar grupos de clientes com
-						características semelhantes, facilitando a oferta de produtos específicos para cada segmento.
-					</p>
-					<ul class="actions">
-						<li><a href="https://github.com/siquette/cluster-credito" class="button">CODE</a></li>
-						<li><a href="https://www.linkedin.com/pulse/kmeans-para-an%C3%A1lise-do-banco-de-dados-cart%C3%A3o-cr%C3%A9dito-aroni-siquette-r7t1f/?trackingId=HWJ08%2FNySTGTWblXFsTlIw%3D%3D"
-								class="button">Page</a></li>
-					</ul>
-
-					<h4>Teste 2: Análise de Loja de Varejo com K-means e HAC.</h4>
-					<p align="justify">
-						O segundo teste aplica tanto o K-means quanto o HAC para analisar os dados de uma loja de
-						varejo. Neste caso, utilizamos ambas as técnicas de clusterização para comparar os resultados e
-						entender melhor o comportamento dos clientes. As variáveis analisadas podem incluir o valor
-						total de compras, a frequência de visitas à loja, e os tipos de produtos comprados. A comparação
-						entre K-means e HAC permitirá uma visão mais abrangente dos padrões de comportamento dos
-						clientes.
-					</p>
-					<ul class="actions">
-						<li><a href="https://github.com/siquette/Clustering-varejista" class="button">CODE</a></li>
-					</ul>
-
-					<h4>Teste 3: Análise de Índice de Países com HAC e K-means</h4>
-					<p align="justify">
-						No terceiro teste, usamos HAC e K-means para analisar índices de países. As variáveis podem
-						incluir indicadores econômicos, sociais e demográficos, como PIB, taxa de desemprego,
-						expectativa de vida, entre outros. A análise visa agrupar os países em clusters com
-						características semelhantes, o que pode ajudar na identificação de padrões globais e regionais,
-						além de auxiliar na formulação de políticas internacionais.
-					</p>
-					<ul class="actions">
-						<li><a href="https://github.com/siquette/cluster_paises" class="button">CODE</a></li>
-					</ul>
-
-
-					</ul>
-				</div>
-			</section>
-
-
-
-
-			<p></p>
-			<article>
-				<section class="spotlight">
-					<div class="image"><a href="https://github.com/siquette/md_code_Data-Money"><img
-								src="https://raw.githubusercontent.com/siquette/portifolio_3/main/images/ml.png"
-								alt="" /></div>
-					<div class="content"></a>
-
-						<h3>Ensaio de Machine Learning</h3>
-						<p align="justify">Nesse projeto, foram explorados os principais conceitos do treinamento,
-							ajuste de parâmetros e limiares entre overfitting e underfitting de vários algoritmos de
-							Machine Learning dentro das tarefas de classificação, regressão e agrupamento, através
-							de um ensaio de Machine Learning.</p>
-						<p align="justify">O resultado final do projeto foi um painel mostrando a performance desses
-							algoritmos de Machine Learning, a partir da variações dos valores dos principais
-							parâmetros de cada algoritmo, que controlam o estado de overfitting e underfitting.</p>
-
-						<h3>As ferramentas utilizadas foram:</h3>
-
-						<ul>
-
-							<li>Python e Scikit-learn</li>
-							<li>Algoritmos de classificação: KNN, Decision Tree, Random Forest e Logistic Regression
-							</li>
-							<li>Métricas de performance: Accuracy, Precision, Recall, F1-Score, R2, MSE, RMSE, MAE,
-								MAPE e Silhouette Score</li>
-							<li>Algoritmos de regressão: Linear Regression, Decision Tree Regressor, Random Forest
-								Regressor, Polinomial Regression, Linear Regression Lasso, Linear Regression Ridge,
-								Linear Regression Elastic Net, Polinomial Regression Lasso, Polinomial Regression
-								Ridge e Polinomial Regression Elastic Net</li>
-							<li>Algoritmos de agrupamento: K-Means e Affinity Propagation</li>
-							<p></p>
-
-							<ul>
-
-
-
-								<ul class="actions">
-									<li><a href="https://github.com/siquette/md_code_Data-Money" class="button">Page</a>
-									</li>
-									<p></p>
-								</ul>
-
-				</section>
-				<section class="spotlight">
-					<div class="image"><a href="https://fome-zero-base-sa90zpsdjp.streamlit.app//"><img
-								src="https://raw.githubusercontent.com/siquette/portifolio_3/main/images/37c55eb5-e270-4153-a308-70724c9bed5f.jpg"
-								alt="" /></div>
-					<div class="content"></a>
-
-						<h3>DESENVOLVIMENTO DE UM PAINEL GERENCIAL PARA NEGÓCIO PARA UMA EMPRESA MARKETPLACE DE
-							RESTAURANTE COM O STREMLIT</h3>
-						<p align="justify">A empresa Fome Zero é uma marketplace de restaurantes. Ou seja, seu core
-							business é facilitar o encontro e negociações de clientes e restaurantes. Os
-							restaurantes fazem o cadastro dentro da plataforma da Fome Zero, que disponibiliza
-							informações como endereço, tipo de culinária servida, se possui reservas, se faz
-							entregas e também uma nota de avaliação dos serviços e produtos do restaurante, dentre
-							outras informaçõesn.</p>
-						<h3>As ferramentas utilizadas foram:</h3>
-
-						<ul>
-
-							<li>Git, Gitlab e Github.</li>
-							<li>Python, Pandas, Matplotlib e Seaborn.</li>
-							<li>Visual Studio Code.</li>
-							<li>Streamlit.</li>
-							<li>Streamlit Cloud.</li>
-							<p></p>
-
-							<ul>
-								<ul class="actions">
-									<li><a href="https://github.com/siquette/fome-zero-base/blob/main/notebooks/c01_pgvf.ipynb" class="button">CODE</a></li>
-									<li><a href="https://fome-zero-base-sa90zpsdjp.streamlit.app//"
-											class="button">Page</a></li>
-								
-										
-				
-
-
-				</section>
-
-
-				<section class="spotlight">
-					<div class="image"><a href="https://fooddeliverydataset-z1a1waexcw.streamlit.app/"><img
-								src="https://raw.githubusercontent.com/siquette/portifolio_3/main/images/382b59e3-c635-451f-ac70-e51afb951220.jpg"
-								alt="" /></div>
-					<div class="content"></a>
-
-						<h3>Desenvolvimento de um Painel Gerencial para Negócio com o Stremlit.</h3>
-						<p align="justify"> Nesse projeto, os conceitos de Programação em Python, manipulação de
-							dados, pensamento estratégico e lógica de negócio, junto com ferramentas de
-							desenvolvimetno web como o Streamlit e Github, foram usados para desenvolver um painel
-							gerencial com as principais métricas de uma empresa marketplace de delivery de comida .
-							O resultado final do projeto foi um painel hospedado em um ambiente Cloud e
-							disponibilizado através de um link web. O painel pode ser acessado por qualquer
-							dispositivo conectad na internet.</p>
-						<h3>As ferramentas utilizadas foram:</h3>
-
-						<ul>
-							<li>Git, Gitlab e Github.</li>
-							<li>Python, Pandas, Matplotlib e Seaborn.</li>
-							<li>Visual Studio Code.</li>
-							<li>Streamlit.</li>
-							<li>Streamlit Cloud.</li>
-							<p></p>
-
-							<ul>
-								<ul class="actions">
-									<li><a href="https://github.com/siquette/Food_Delivery_Dataset"
-											class="button">CODE</a></li>
-
-									<ul class="actions">
-										<li><a href="https://fooddeliverydataset-z1a1waexcw.streamlit.app/"
-												class="button">Page</a></li>
-										<p></p>
-									</ul>
-
-
-				</section>
-
-
-				<section class="spotlight">
-					<div class="image"><a href="https://siquette.github.io/work-1-py/"><img
-								src="https://coronavirusbra1.github.io/assets/meta/ogimage.png" alt="" /></div>
-					<div class="content"></a>
-
-						<h3>Analise de serie temporal: COVID-19</h3>
-						<p align="justify"> A pandemia de covid-19 é um problema que assolou grande parte da
-							população brasileira e da população mundial. Apesar disso, existem inúmeros segmentos da
-							sociedade que propagam informações errôneas sobre o assunto e, tornando essencial a
-							análise do tópico, em especial acerca da efetividade das ações de fechamento forçado. O
-							Brasil é um dos países que mais sofreram com a pandemia de coronavírus. Assim, essa
-							pesquisa utiliza dados da Secretaria Estadual de Análise de Dados Estatísticos(SEADE),
-							responsável pelo monitoramento de dados referentes ao número de óbitos e casos no estado
-							de São Paulo. Serão considerados dados referentes a outros estados e às ações de
-							fechamento e políticas públicas para enfrentar a crise sanitária, representados em
-							grande parte pelo índice de isolamento social. Os dados estudados permitirão revelar a
-							possível correlação das variáveis no estudo dos fatores que interferem na pandemia,
-							permitindo uma visão estatística sobre a pandemia. Espera-se que esse estudo contribua
-							para uma melhor compreensão sobre os impactos do coronavírus em São Paulo, mas que
-							também sirva para divulgação de informações corretas sobre a crise sanitária e o
-							fechamento, além de servir para futuros estudos, ações coletivas e políticas públicas
-							referentes ao tema </p>
-						<h3> ferramentas utilizadas foram: </h3>
-
-						<ul>
-							<li>Python, Pandas, Matplotlib e Seaborn.</li>
-							<li>Visual Studio Code.</li>
-							<p></p>
-
-							<ul>
-								<ul class="actions">
-									<li><a href="https://siquette.github.io/work-1-py/" class="button">CODE</a></li>
-
-
-								</ul>
-
-
-
-				</section>
-
-
-
-
-				<!-- CTA -->
-				<section id="cta" class="wrapper style4">
-					<div class="inner">
-						<header>
-							<h2>Entre em Contato</h2>
-							<p>Sinta-se à vontade para entrar em contato.</p>
-							<li class="icon solid fa-envelope"><a href="#"> rodrigosiquette@gmail.com</a></li>
-							<li class="icon solid fa-envelope"><a href="#"> rodrigo.siquette@usp.br</a></li>
-							<li class="icon brands fa-linkedin"><a
-									href="https://www.linkedin.com/in/rodrigo-aroni-siquette"> LinkedIn</a></li>
-							<li class="icon brands fa-medium"><a href="https://siquette.github.io/cv/"> Curriculum
-									Vitae</a></li>
-						</header>
-						<ul class="actions stacked">
-
-						</ul>
-					</div>
-				</section>
-
-				<!-- Footer -->
-				<footer id="footer">
-					<ul class="icons">
-						<li><a href="https://siquette.github.io/cv/" class="icon brands fa-github"><span
-									class="label">Github</span></a></li>
-
-						<li><a href="https://www.linkedin.com/in/rodrigo-aroni-siquette"
-								class="icon brands fa-linkedin"><span class="label">Instagram</span></a></li>
-						<li><a href="rodrigo.siquette@usp.br" class="icon solid fa-envelope"><span
-									class="label">Email</span></a></li>
-						<li><a href="rodrigosiquette@gmail.com" class="icon solid fa-envelope"><span
-									class="label">Email</span></a></li>
-
-
-
-						<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a>
-						</li>
-
-					</ul>
-					<ul class="copyright">
-						<li>&copy; Untitled</li>
-						<li>Design: Rodrigo</a></li> <br />
-						<img src="https://raw.githubusercontent.com/siquette/agoravai/gh-pages/imagem/imagem1.gif"
-							width=40%>
-					</ul>
-				</footer>
+		<footer id="footer">
+			<ul class="copyright">
+				<li>&copy; Rodrigo Aroni Siquette</li>
+				<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+			</ul>
+			<img src="https://raw.githubusercontent.com/siquette/agoravai/gh-pages/imagem/imagem1.gif" alt="Animated Logo" class="footer-logo">
+		</footer>
 
 	</div>
 
-	<!-- Scripts -->
 	<script src="assets/js/jquery.min.js"></script>
 	<script src="assets/js/jquery.scrollex.min.js"></script>
 	<script src="assets/js/jquery.scrolly.min.js"></script>
@@ -540,6 +422,4 @@
 	<script src="assets/js/main.js"></script>
 
 </body>
-
 </html>
-

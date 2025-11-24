@@ -1,0 +1,349 @@
+/* CUSTOM.CSS - Personalizações do Portfólio
+   Tema: Full Dark Mode & High Contrast Typography
+   Estratégia: High Opacity Overlays para fundo complexo
+   Author: Rodrigo Aroni Siquette
+*/
+
+/* --- 0. VARIÁVEIS GLOBAIS --- */
+:root {
+    /* Cores de Identidade */
+    --primary-color: #ed4933;       /* Laranja Persimmon (Destaque) */
+    
+    /* Tipografia */
+    --text-main: #dcdcdc;           /* Cinza Claro (Leitura longa) */
+    --text-heading: #ffffff;        /* Branco Puro (Títulos) */
+    
+    /* Fundos & Camadas */
+    /* IMPORTANTE: Opacidade alta (0.96) para bloquear o ruído 
+       da imagem de fundo colorida, mantendo leve transparência.
+       Cor base: Dark Blue-Grey (quase preto).
+    */
+    --section-bg: rgba(22, 28, 36, 0.96); 
+    
+    --glass-border: rgba(255, 255, 255, 0.08);
+    --glass-highlight: rgba(255, 255, 255, 0.05);
+}
+
+/* --- 1. ESTRUTURA GLOBAL & LEGIBILIDADE --- */
+
+/* Força o fundo escuro em TODAS as seções principais para cobrir a imagem */
+#one, 
+#two, 
+#three, 
+#cta,
+.wrapper.style1,
+.wrapper.style2, 
+.wrapper.style3, 
+.wrapper.style4,
+.spotlight {
+    background-color: var(--section-bg) !important;
+    background-image: none !important; /* Remove gradientes nativos do template */
+    
+    /* O Blur desfoca os detalhes da imagem de fundo que passarem pela transparência */
+    backdrop-filter: blur(12px); 
+    -webkit-backdrop-filter: blur(12px);
+    
+    /* Bordas sutis para separar visualmente os blocos */
+    border-top: 1px solid var(--glass-border);
+}
+
+/* Tipografia Base */
+p {
+    line-height: 1.8;
+    color: var(--text-main);
+    font-weight: 300;
+    margin-bottom: 2em;
+    /* Sombra leve para garantir contraste extra contra resquícios do fundo */
+    text-shadow: 0 1px 1px rgba(0,0,0,0.5);
+}
+
+/* Títulos */
+h1, h2, h3, h4, h5, h6 {
+    color: var(--text-heading) !important;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+}
+
+/* Ajuste específico para o título de Projetos que era roxo */
+#two h2 {
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+}
+
+/* Alinhamentos de Texto */
+.spotlight .content p, 
+#one .text-content p,
+.formacao-box p {
+    text-align: left;
+}
+
+#banner p, 
+header.major p,
+.text-center {
+    text-align: center;
+}
+
+/* Espaçamentos Utilitários */
+.spacer-sm { margin-bottom: 1em; }
+.spacer-md { margin-bottom: 2em; }
+
+
+/* --- 2. BANNER --- */
+#banner h2 {
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+    text-shadow: 0 4px 10px rgba(0,0,0,0.8); /* Sombra forte no banner */
+}
+
+#banner p {
+    font-size: 1.1em;
+    color: rgba(255, 255, 255, 0.9);
+    max-width: 800px;
+    margin: 0 auto;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    background: rgba(0,0,0,0.4); /* Tarja sutil atrás do texto do banner */
+    padding: 10px;
+    border-radius: 4px;
+}
+
+
+/* --- 3. SEÇÃO SOBRE MIM --- */
+.profile-logo {
+    display: block;
+    margin: 20px auto 30px auto;
+    border-radius: 50%;
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border: 3px solid rgba(255, 255, 255, 0.1); 
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+}
+
+/* BOX DE FORMAÇÃO (Glassmorphism) */
+.formacao-box {
+    margin-bottom: 35px; 
+    border-left: 4px solid var(--primary-color);
+    
+    /* Fundo levemente mais claro que a seção para criar camada */
+    background: var(--glass-highlight);
+    
+    padding: 25px;
+    border-radius: 0 8px 8px 0;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    border-top: 1px solid var(--glass-border);
+    border-right: 1px solid var(--glass-border);
+}
+
+.formacao-list {
+    list-style: none; 
+    padding: 0; 
+    margin: 0; 
+}
+
+.formacao-list li {
+    margin-bottom: 12px;
+    color: var(--text-main);
+    font-size: 0.95em;
+    border-bottom: 1px solid var(--glass-border);
+    padding-bottom: 8px;
+}
+
+.formacao-list li strong {
+    color: var(--primary-color);
+}
+
+.chess-quote {
+    font-size: 1.25em; 
+    font-style: italic; 
+    color: rgba(255, 255, 255, 0.6) !important;
+    border-left: none; 
+    text-align: center; 
+    margin: 3em 0;
+    font-family: serif;
+}
+
+
+/* --- 4. PROJETOS & IMAGENS --- */
+.spotlight .image img {
+    border-radius: 8px;
+    border: 1px solid var(--glass-border); 
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    object-fit: cover; 
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+/* Utilitário para imagens responsivas no HTML */
+.responsive-img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.spotlight .image:hover img {
+    transform: scale(1.02);
+    border-color: var(--primary-color);
+}
+
+.spotlight h4 {
+    color: var(--primary-color) !important;
+    margin-top: 1.5em;
+    margin-bottom: 0.5em;
+    font-size: 0.9em;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+.project-gif {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 8px;
+    margin-top: 20px;
+    border: 1px solid var(--glass-border);
+}
+
+
+/* --- 5. TECH TAGS & INTERFACE --- */
+.tech-tags-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 25px;
+    margin-top: 15px;
+}
+
+.tech-tag {
+    display: inline-block;
+    padding: 5px 14px;
+    border-radius: 50px; 
+    
+    background: rgba(237, 73, 51, 0.1); 
+    border: 1px solid rgba(237, 73, 51, 0.4);
+    color: var(--primary-color);
+    
+    font-size: 0.8em;
+    font-family: "Courier New", monospace;
+    font-weight: 600;
+    transition: all 0.2s ease;
+}
+
+.tech-tag:hover {
+    background: var(--primary-color); 
+    color: #fff;
+    border-color: var(--primary-color);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(237, 73, 51, 0.4);
+}
+
+/* Ícones de Habilidades (Seção #three) */
+section#three .icon.solid:before {
+    color: var(--primary-color);
+}
+
+
+/* --- 6. BOTÕES & LINKS --- */
+ul.actions li a.button:not(.primary) {
+    background: transparent;
+    box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.3);
+    color: rgba(255, 255, 255, 0.8) !important;
+    transition: all 0.2s ease;
+}
+
+ul.actions li a.button:not(.primary):hover {
+    box-shadow: inset 0 0 0 2px var(--primary-color);
+    color: var(--primary-color) !important;
+}
+
+/* Links gerais no texto */
+a {
+    transition: color 0.2s ease;
+    border-bottom-color: transparent;
+}
+a:hover {
+    color: var(--primary-color) !important;
+}
+
+
+/* --- 7. FOOTER --- */
+.footer-logo {
+    width: 60px; 
+    margin-top: 20px;
+    opacity: 0.8;
+}
+
+footer#footer {
+    background-color: #000 !important; /* Footer totalmente preto */
+    padding: 4em 0 2em 0;
+}
+
+/* --- 8. FIX: SEÇÃO DE CONTATO (Botões Alinhados) --- */
+
+/* 1. Container da Lista: Usa Flexbox para centralizar e alinhar */
+#cta .icons {
+    display: flex;
+    flex-wrap: wrap; /* Permite quebrar linha em mobile */
+    justify-content: center; /* Centraliza horizontalmente */
+    gap: 20px; /* Espaço uniforme entre os botões */
+    margin-top: 40px;
+    padding: 0; /* Remove padding padrão de listas */
+    list-style: none;
+}
+
+/* 2. Reset dos itens da lista */
+#cta .icons li {
+    display: block;
+    padding: 0;
+    margin: 0 !important; /* Remove margens laterais padrão do template */
+}
+
+/* 3. Estilo do Botão (Link) */
+#cta .icons a {
+    display: flex; /* Alinha Ícone e Texto na mesma linha */
+    align-items: center; /* Centraliza verticalmente perfeitamente */
+    justify-content: center;
+    
+    /* Tamanho e Forma */
+    min-width: 200px; /* Largura mínima para ficarem padronizados */
+    padding: 12px 25px;
+    border-radius: 50px; /* Formato Pílula */
+    
+    /* Cores e Bordas (Dark Mode Clean) */
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid var(--glass-border);
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+/* 4. Estilo do Ícone dentro do botão */
+#cta .icons a .icon {
+    font-size: 1.4em;
+    color: var(--primary-color);
+    margin-right: 12px; /* Espaço entre ícone e texto */
+    width: auto !important; /* Remove largura fixa do template se houver */
+    height: auto !important;
+    line-height: 1 !important; /* Remove altura de linha estranha */
+}
+
+/* 5. Estilo do Texto (Oculto originalmente pelo template) */
+#cta .icons a .label {
+    display: inline-block !important; /* FORÇA O TEXTO A APARECER */
+    color: var(--text-main);
+    font-weight: 600;
+    font-size: 0.9em;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+
+/* 6. Efeito Hover (Interação) */
+#cta .icons a:hover {
+    background: var(--primary-color); /* Fica laranja */
+    border-color: var(--primary-color);
+    transform: translateY(-3px); /* Sobe um pouquinho */
+    box-shadow: 0 5px 15px rgba(237, 73, 51, 0.4); /* Glow laranja */
+}
+
+/* Muda a cor do texto e ícone para branco no hover */
+#cta .icons a:hover .label,
+#cta .icons a:hover .icon {
+    color: #ffffff !important;
+}
